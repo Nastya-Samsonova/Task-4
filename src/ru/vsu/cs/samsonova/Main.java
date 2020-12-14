@@ -5,10 +5,15 @@ import java.util.Scanner;
 public class Main {
 
     public static void main(String[] args) {
-        Scanner scanner = new Scanner(System.in);
-        int n = scanner.nextInt();
+        int n = enterCountElements();
         double result = putElementsValues(n);
         System.out.println(result);
+    }
+
+    private static int enterCountElements() {
+        Scanner scanner = new Scanner(System.in);
+        System.out.println("Count elements in sequence ");
+        return scanner.nextInt();
     }
 
     public static double putElementsValues(int n) {
